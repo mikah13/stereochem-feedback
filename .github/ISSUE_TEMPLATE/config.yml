@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Feedback without a GitHub account
+    url: https://tally.so/r/REPLACE_ME
+    about: Send a bug report, idea or question through a short form.
+  - name: Editor guide
+    url: https://stereochem-orcin.vercel.app/docs
+    about: How to draw, edit, optimize and export molecules.

@@ -1,0 +1,57 @@
+name: Report a bug
+description: Something in Stereochem is broken or gives a wrong result.
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this. Please search the existing issues first.
+        Don't paste unpublished or confidential structures here. Issues are public.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe what went wrong. Include any error message you saw.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open the sample (caffeine)
+        2. Switch to 3D
+        3. Click Optimize
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+  - type: textarea
+    id: structure
+    attributes:
+      label: Molecule or file
+      description: A SMILES string, PubChem name, or attached file (CJSON, MOL, SDF, XYZ, PDB) that shows the problem.
+      render: text
+  - type: dropdown
+    id: workspace
+    attributes:
+      label: Where in the app?
+      options:
+        - Molecule, 2D sketch
+        - Molecule, 3D view
+        - Reactions
+        - Import or export
+        - Other
+  - type: input
+    id: version
+    attributes:
+      label: Stereochem version
+      description: Filled in automatically when you use Report a bug in the app.
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and operating system
+      description: Filled in automatically when you use Report a bug in the app.
+      placeholder: e.g. Chrome 140 on Windows 11
